@@ -5,7 +5,7 @@ namespace wttrbar::cli
 {
     struct CliArgs
     {
-        std::string mainIndicator = "temp_C";
+        std::string mainIndicator = "";
         std::string location = "";
         bool verticalView = false;
         bool ampm = false;
