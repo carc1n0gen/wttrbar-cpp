@@ -176,11 +176,11 @@ int main(int argc, char* argv[])
 
         if (args.nerd)
         {
-            tooltip.append(format("󰖜 {} 󰖛 {}", sunrise, sunset));
+            tooltip.append(format("󰖜 {} 󰖛 {}\n", sunrise, sunset));
         }
         else
         {
-            tooltip.append(format("🌅 {} 🌇 {}", sunrise, sunset));
+            tooltip.append(format("🌅 {} 🌇 {}\n", sunrise, sunset));
         }
 
         const boost::json::array& hourly = day.at("hourly").as_array();
