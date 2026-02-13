@@ -197,7 +197,7 @@ int main(int argc, char* argv[])
             }
             else
             {
-                outputHour = format("{:%H:%M}", time).c_str();
+                outputHour = format("{:%H}", time).c_str();
             }
 
             string hourIcon = weatherIcons.at(hour.as_object().at("weatherCode").as_string().c_str());
